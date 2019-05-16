@@ -1,0 +1,116 @@
+.features {
+    
+    &__title {
+        width: 60%;
+        margin: 0 auto;
+        
+        @include for-tablet-small-down {
+            width: 70%;
+        }
+    }
+    
+    &__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+        
+        @include for-tablet-medium-down {
+            width: 80%;
+            flex-direction: column-reverse;
+        }
+    
+    }
+    
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__feature {
+        width: 70%;
+        padding: 1.75rem 3rem;
+        margin-left: 3rem;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        box-shadow: none;
+        transition: all .2s ease-out;
+        
+        @include for-tablet-large-down {
+            margin-left: 1.5rem;
+        }
+        
+        @include for-tablet-medium-down {
+            margin: 0 auto;
+        }
+        
+        @include for-phone-large-down {
+            width: 100%;
+        }
+ 
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+            
+        }
+        
+        &:last-child {
+            @include for-tablet-medium-down {
+                margin-bottom: 4rem;
+            }
+    
+        }
+    
+        
+        &--name {
+            @include font-monospace;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        
+        &--description {
+            font-size: 1.4rem;
+        }
+        
+        &:hover,
+        &:focus {
+            border: 1px solid $color-violet-bright;
+            box-shadow: $black-shadow-surround-light;
+        }
+    }
+    
+    &__image-box {
+        width: 50%;
+        text-align: center;
+        
+        @include for-tablet-large-down {
+            width: 80%;
+        }
+        
+        @include for-tablet-medium-down {
+            width: 50%;
+        }
+        
+    }
+    
+    &__image {
+        width: 100%;
+        padding: 0 4rem 0 0;
+        
+        @include for-tablet-large-down {
+            padding: 0rem;
+        }
+        
+        @include for-tablet-medium-down {
+            padding: 2rem 5rem;
+        }
+        
+        @include for-tablet-small-down {
+            padding: 2rem 2.5rem;
+        }
+        
+        @include for-phone-large-down {
+            padding: 0rem; 
+        }
+    }
+}

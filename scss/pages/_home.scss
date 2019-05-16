@@ -1,0 +1,42 @@
+.section-logos {
+    background-image: $gradient-violet-reverse;
+    width: 100%;
+}
+
+.logos__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.logo__img {
+    padding: 2rem 5rem;
+    width: 20%;
+    
+    @include for-tablet-medium-down {
+        padding: 2rem 3.5rem;
+    }
+    
+    @include for-tablet-small-down {
+        padding: 2rem 2.5rem;
+        width: 25%;
+    }
+    
+    @include for-phone-large-down {
+        padding: 2rem .5rem;
+        width: 28%;
+    }
+    
+    @include for-phone-small-down {
+        padding: 2rem .5rem;
+        width: 33%;
+    }
+    
+    &--mp {
+        @include for-phone-large-down {
+            display: none;
+        }
+    }
+}

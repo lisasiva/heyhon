@@ -1,0 +1,119 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-gray-dark;
+    
+}
+
+.heading {
+    
+    &--name {
+        @include font-monospace;
+        @include gradient-text;
+
+        font-size: 3.5rem;
+        letter-spacing: .08em;
+        color: $color-violet-bright;
+        font-weight: 400;
+        text-decoration:none;
+        transition: color .2s ease-out;
+        
+        @include for-tablet-medium-down {
+            font-size: 3.2rem;
+        }
+        
+        @include for-phone-small-down {
+            display: none;
+        }
+        
+        &-mobile {
+            display: none;
+            
+            @include font-monospace;
+            @include gradient-text;
+
+            font-size: 2.5rem;
+            margin-bottom: 1.8rem;
+            font-weight: 400;  
+            
+            @include for-phone-small-down {
+                display: block;
+            }
+        }
+    }
+    
+    &--super {
+        @include font-monospace;
+        
+        font-size: 1.8rem;
+        color: $color-violet-bright;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    
+    &--primary {
+        font-size: 6rem;
+        font-weight: 500; 
+        line-height: 1.2;
+        
+        @include for-tablet-medium-down {
+            font-size: 5rem;
+        }
+        
+        @include for-tablet-small-down {
+            font-size: 4.5rem;
+        }
+        
+        @include for-phone-large-down {
+            font-size: 3.8rem;
+        }
+    
+    }
+    
+    &--secondary,
+    &--cta {
+        font-size: 4.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+        
+        @include for-tablet-medium-down {
+            font-size: 4rem;
+        }
+        
+        @include for-tablet-small-down {
+            font-size: 3.3rem;
+        }
+        
+        @include for-phone-large-down {
+            font-size: 3rem;
+        }
+    } 
+    
+    &--cta {
+        color: $color-white;
+        line-height: 0;
+    }
+    
+    &--dek,
+    &--dek-cta {
+        font-size: 2rem;
+        line-height: 2;
+        
+        @include for-tablet-medium-down {
+            font-size: $font-size-default;
+        }
+        
+        @include for-tablet-small-down {
+            font-size: 1.4rem;
+            line-height: 1.8;
+        }
+    }
+    
+    &--dek { color: $color-gray-medium; }
+    
+    &--dek-cta { 
+        color: $color-white;
+    }
+}

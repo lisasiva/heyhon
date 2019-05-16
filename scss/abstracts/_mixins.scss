@@ -1,0 +1,67 @@
+@mixin font-monospace { font-family: 'Inconsolata', monospace; }
+
+@mixin dot-grid {
+    content: '';
+    display: inline-block;
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    background-image: radial-gradient(rgba($color-violet-bright, 1) 5%, transparent 0);
+    background-size: 30px 30px;
+}
+
+@mixin center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin typography-white-monospace {
+    @include font-monospace;
+
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding-bottom: .2rem;
+    color: $color-white;
+}
+
+@mixin gradient-text {
+    background: $gradient-violet-blue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+///////////////////////////
+// MEDIA QUERIES
+///////////////////////////
+
+// 1100px wide or narrower
+@mixin for-tablet-large-down {
+    @media (max-width: 68.75em) { @content; }
+}
+
+// 900px wide or narrower
+@mixin for-tablet-medium-down {
+    @media (max-width: 56.25em) { @content; }
+}
+
+// 600px wide or narrower
+@mixin for-tablet-small-down {
+    @media (max-width: 37.5em) { @content; }
+}
+
+// 480px wide or narrower
+@mixin for-phone-large-down {
+    @media (max-width: 30em) { @content; } 
+} 
+
+// 320px wide or narrower
+@mixin for-phone-small-down {
+    @media (max-width: 20em) { @content; }
+}
+
+// 1100px wide or narrower && 800px long or longer && portrait mode
+@mixin for-long-mobile-devices-portrait {
+    @media (max-width: 68.75em) and (min-height: 50em) and (orientation:portrait) { @content; }
+}

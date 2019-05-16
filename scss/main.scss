@@ -1,0 +1,24 @@
+@import url('https://rsms.me/inter/inter.css');
+@supports (font-variation-settings: normal) {
+  body { font-family: 'Inter var', sans-serif; }
+}
+
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/features";
+@import "components/benefits";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/cta";
+@import "layout/footer";
+
+@import "pages/home";

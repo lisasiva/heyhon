@@ -1,0 +1,79 @@
+.footer {
+    background-color: $color-gray-blue;
+    padding: 1.4rem $nav-spacing-side;
+    
+    @include for-tablet-small-down {
+        padding: 1.4rem $nav-spacing-side-small;
+    }
+    
+    @include for-phone-large-down {
+        padding: 1.4rem $nav-spacing-side-smallest;
+    }
+
+    
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__left { flex: 1; }
+    
+    &__logo {
+        
+        &:link,
+        &:visited {
+            @include font-monospace;
+            color: $color-gray-dark;
+            font-weight: 400;
+            font-size: 2.5rem; 
+            text-decoration: none;
+            transition: all .2s;
+        }
+        
+        &:hover,
+        &:active {
+            color: $color-violet-bright;
+        }
+        
+    }
+    
+    &__right {
+        @include font-monospace;
+        display: flex;
+        font-size: 1.4rem;
+        padding-bottom: .2rem;
+        
+        @include for-phone-large-down {
+            font-size: 1.2rem;
+        }
+    }
+    
+    &__copyright {
+        display: inline-block;
+        padding-right: 3rem;
+        
+        @include for-phone-large-down {
+            padding-right: 1.7rem;
+        }
+        
+        
+    }
+    
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            color: $color-gray-dark;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all .2s;
+        }
+        
+        &:hover,
+        &:active {
+            color: $color-violet-bright;
+            border-bottom: 1px solid $color-violet-bright;
+        }
+    }
+    
+}

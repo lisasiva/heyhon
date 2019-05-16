@@ -1,0 +1,29 @@
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-medium { margin-bottom: 2.4rem !important; }
+
+.u-margin-bottom-large { 
+    margin-bottom: 6rem !important;
+}
+
+.u-margin-top-small { margin-top: 3rem !important; }
+
+.u-margin-top-section { 
+    margin-top: 7rem !important;
+    
+    @include for-tablet-medium-down {
+        margin-top: 4.5rem !important;
+    }
+}
+
+.u-margin-top-section-xl { 
+    margin-top: 15rem !important;    
+}
+
+.u-span-line-2 { 
+    display: block !important;
+    
+    @include for-tablet-small-down {
+        display: inline !important;
+    }
+}

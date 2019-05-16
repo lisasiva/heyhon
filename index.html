@@ -1,158 +1,187 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
-    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
-    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
-    <link href="resources/css/style.css" rel="stylesheet">
-    <link href="resources/css/nav.css" rel="stylesheet">
-    <link href="resources/css/footer.css" rel="stylesheet">
-    <link href="resources/css/queries.css" rel="stylesheet">
+    <meta charset="UTF-8">
     
-    <!-------------- FAVICONS -------------->
-    <link rel="icon" type="image/x-icon" href="resources/img/favicon-heyhon-heart.ico" />
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
     
-    <!-------------- METADATA -------------->
-    <title>HeyHon - For Process Nerds in Relationships</title>
-    <meta name="description" content="HeyHon is a startup out of Georgia Tech's Center for Deliberate Innovation, exploring ways to adapt methods from project management into personal relationships."/>
+    <!-- STYLESHEETS -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    
+    <title>Agile for Relationships - HeyHon</title>
 </head>
-    
 <body>
-    
-    <!-------------- NAV BAR -------------->
-    
-    <nav id="main-nav" class="js--main-nav">
-        <a href="#header" class="main-nav__logo">HeyHon</a>
-        <a href="#mission" class="main-nav__link">mission</a>
-        <a href="#get-involved" class="main-nav__link">how to get involved</a>
-        <a href="https://calendly.com/lisasiva/research-call?back=1" target="_blank" class="cta">schedule a chat</a>
-        <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
-    </nav>
-    
-    <!-------------- MOBILE NAV OVERLAY -------------->
-    
-    <!-- The overlay -->
-    <div id="mobileNav" class="overlay">
-
-      <!-- Button to close the overlay navigation -->
-      <a href="#" class="mobile-close-icon"><i class="fas fa-times"></i></a>
-    
-      <!-- Overlay content -->
-      <div class="overlay-links">
-        <a href="#mission" onclick="closeNav()">mission</a>
-        <a href="#get-involved" onclick="closeNav()">how to get involved</a>
-        <a href="https://calendly.com/lisasiva/research-call?back=1" target="_blank" onclick="closeNav()">schedule a chat</a>
-      </div>
-
-    </div>
-    
-    <!-------------- HEADER -------------->
-    
-    <header id="header">
-        <div class="header__copy">
-           <h1>What if we ran Agile on our relationships?</h1>
-           <h2>What would that look like? Would it be weird? Wonderful? We'd love your help in answering these questions.</h2>
+  
+  <!-- NAVIGATION -->
+    <div class="navigation">
+        <div class="navigation__background">
+            &nbsp;
         </div>
-        <div class="header__img">
-            <img src="resources/img/header-heyhon-couple-running-undraw.png" alt="HeyHon">
+        <div class="navigation__button">
+            <span class="navigation__icon navigation__icon--line-1">&nbsp;</span>
+            <span class="navigation__icon navigation__icon--line-2">&nbsp;</span>
+            <span class="navigation__icon navigation__icon--line-3">&nbsp;</span>
+        </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">01 <a href="#features" class="navigation__link">How It Works</a></li>
+                <li class="navigation__item">02 <a href="#why" class="navigation__link">Why HeyHon?</a></li>
+                <li class="navigation__item">03 <a href="https://app.heyhon.co/login" class="navigation__link">Log In</a></li>
+                <li class="navigation__item">04 <a href="https://app.heyhon.co/register" class="navigation__link">Sign Up</a></li>
+            </ul>    
+        </nav>
+    </div>    
+   
+   <!-- HEADER --> 
+    <header class="header header--home" id="top">
+       <div class="header__logo">
+           <h3 class="heading--name">HeyHon</h3>
+       </div>
+        <div class="header__content u-center-text">
+           <div class="header__title u-margin-bottom-medium">
+               <h4 class="heading--name-mobile">HeyHon</h4>    
+                <h1 class="heading--primary">
+                    Jot it down now.
+                    <span class="u-span-line-2">Debug later, together.</span>
+                </h1>   
+           </div>
+           <div class="header__description u-margin-bottom-medium">
+                <p class="heading--dek">HeyHon is an external brain for your relationship—so you can free up headspace and get back to enjoying the moment. </p>   
+           </div>
+            <div class="header__buttons u-center-text">
+                <a href="https://app.heyhon.co/" class="btn btn--outline btn--outline-violet">Try It Now <span class="btn__right-arrow">&rarr;</span></a>   
+            </div>
         </div>
     </header>
     
     
-    <!-------------- MISSION -------------->  
-    
-    <section id="mission">
-        <div class="mission__img">
-            <img src="resources/img/mission-intentional-relationships-heyhon-undraw.png">
-        </div>
-        <div class="mission__copy">
-            <div class="mission__copy--hed">
-              <p class="p__superscript">The Mission</p>
-              <h3>We believe in being as intentional in our relationships as we are at work.</h3>
-            </div>
-            <div class="mission__copy--description">
-              <p class="p__description">Our goal is to make tools that help fellow process nerds do just that.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-------------- HOW TO HELP -------------->  
+    <main>
      
-    <section id="get-involved">
-        <div class="help__hed">
-            <p class="p__superscript">Get Involved</p>
-            <h3>One 15-minute chat goes a long way</h3>    
-        </div>
-        <div class="help__steps">
-            <div class="help__step">
-                <a href="https://calendly.com/lisasiva/research-call?back=1" target="_blank"><img class="help__step--img" src="resources/img/step-one-schedule-time.png"></a>
-                <div class="help__step--copy">
-                    <p class="help__step--hed">Pick a Time</p>
-                    <p class="help__step--description">You can click the icon above, or reply to the email you got from Lisa. She'll give you a phone call at whatever time you choose.</p>    
-                </div>
+      <!-- LOGOS --> 
+       <section class="section-logos">
+           <div class="logos__container">
+               <img src="img/logo-married-people-400x170.png" class="logo__img logo__img--mp">
+               <img src="img/logo-startup-school-900x380.png" class="logo__img logo__img--sus">
+               <img src="img/logo-flashpoint-506x214.png" class="logo__img logo__img--fp">
+           </div>
+       </section>
+       
+       <!-- FEATURES -->
+        <section class="section-features u-margin-top-section" id="features">
+            <div class="features__title u-center-text">
+                <h4 class="heading--super">How it works</h4>
+                <h2 class="heading--secondary u-margin-bottom-large">It's like an issue tracker, but for your love life.</h2> 
             </div>
-            <div class="help__step">
-                <img class="help__step--img" src="resources/img/step-two-get-on-call.png">
-                <div class="help__step--copy">
-                    <p class="help__step--hed">Say What You Think </p>
-                    <p class="help__step--description">Lisa will share other stories she's heard during the research process and would love your reaction. What resonates? What doesn't?</p>
-                </div>
+            <div class="features__container">
+               <div class="features__image-box">
+                     <img src="img/mockup-add-thought-heyhon.png" class="features__image" alt="Screenshot of HeyHon's mobile web app">  
+               </div>
+               <div class="features__text-box">
+                    <div class="features__feature features__feature--1">
+                        <h3 class="features__feature--name">1. Batch</h3>
+                        <p class="features__feature--description">When something comes up at the right wrong time, create a card and snooze it for later. You won’t forget about it, but you don’t have to deal with it right now either.
+                        </p>    
+                    </div>
+                    <div class="features__feature features__feature--2">
+                        <h3 class="features__feature--name">2. Triage</h3>
+                        <p class="features__feature--description">Your thoughts are all stored in your archive. If, later on, you realize an issue has handled itself, or it’s not really a big deal after all, you can delete it with a single tap.
+                        </p>    
+                    </div>
+                    <div class="features__feature features__feature--3">
+                        <h3 class="features__feature--name">3. Debug</h3>
+                        <p class="features__feature--description">If you do need to bring something up, you’ll have a record of the topic and how you were feeling about it. Share it with your partner with the push of a button.
+                        </p>    
+                    </div>       
+               </div>
             </div>
-            <div class="help__step">
-                <img class="help__step--img" src="resources/img/step-three-thank-you-note.png">
-                <div class="help__step--copy">
-                    <p class="help__step--hed">Get a Thank You Note</p>
-                    <p class="help__step--description">You'll get a prompt (and delightful!) thank-you email, as well as updates on how we've used your feedback, if you'd like them.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-------------- WHY IT MATTERS -------------->
-    
-    <section id="what">
-        <div class="what__copy">
-            <div class="what__copy--hed">
-                <p class="p__superscript">WHAT WE DO WITH YOUR FEEDBACK</p>
-                <h3>Your perspective helps us better understand what to make.</h3>    
-            </div>
-            <div class="what__copy--description">
-                <p class="p__description">We're thinking it might look something like a project management tool for couples. What works for you will help shape it. The stuff that doesn't helps us know what to leave out.</p>
-            </div>
-        </div>
-        <div class="what__img">
-            <img src="resources/img/what-we-do-user-flow.png">
-        </div>
-    </section>
-    
-    <!-------------- LOGOS -------------->
-
-    
-    <!-------------- FOOTER -------------->
-    <footer>
-        <div class="footer-box">
-            <a href="#header" class="footer-box__logo">HeyHon</a>
-            <div class="footer-box__incubators"> 
-                <div class="logo"><img src="resources/img/flashpoint-georgia-tech-logo.png"></div>
-                <div class="logo"><img src="resources/img/startup-school-y-combinator-logo.png"/></div>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/lisa-siva/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:lisa@heyhon.co" class="social-link"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+        </section>
         
-    </footer>
-
-    <!-------------- SCRIPTS -------------->
-<script src="resources/js/script.js"></script>    
+        <!-- BENEFITS --> 
+        <section class="section-benefits u-margin-top-section-xl" id="why">
+            <div class="benefits__title u-center-text">
+                <h4 class="heading--super">Why HeyHon?</h4>
+                <h2 class="heading--secondary u-margin-bottom-large">Make your relationship agile</h2> 
+            </div>
+            <div class="benefits__content">
+                <div class="benefits__benefit benefits__benefit--2">
+                    <div class="benefit__image-box">
+                        <img src="img/benefit-mental-load-heyhon.svg" class="benefit__img">
+                    </div>
+                    <div class="benefit__text-box">
+                        <h3 class="benefit__name">
+                            Lighten your mental load
+                        </h3>
+                        <p class="benefit__description">
+                            When you have a place to brain dump, you don’t have to worry about remembering <em>all the things</em>. You know they’re there, when you’re ready to sort them out. 
+                        </p>    
+                    </div>
+                </div>
+                <div class="benefits__benefit benefits__benefit--1">
+                    <div class="benefit__image-box">
+                        <img src="img/benefit-process-heyhon.svg" class="benefit__img">
+                    </div>
+                    <div class="benefit__text-box">
+                        <h3 class="benefit__name">
+                            Give yourself time to process
+                        </h3>
+                        <p class="benefit__description">
+                            By snoozing an issue, you give yourself time to check: “Do I still feel this way?” and “Is it still important to me, now that some time has passed?” 
+                        </p>    
+                    </div>
+                </div>
+                <div class="benefits__benefit benefits__benefit--3">
+                    <div class="benefit__image-box">
+                        <img src="img/benefit-quality-time-heyhon.svg" class="benefit__img">
+                    </div>
+                    <div class="benefit__text-box">
+                        <h3 class="benefit__name">
+                            Optimize your time together
+                        </h3>
+                        <p class="benefit__description">
+                            HeyHon allows you to put a pin in things that might otherwise throw off your day—so you’re not hashing out the budget right before bed.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CALL TO ACTION -->
+        <section class="section-cta u-margin-top-section-xl">
+            <div class="cta__title u-center-text">
+                <h4 class="heading--super">Get Started</h4>
+                <h2 class="heading--secondary u-margin-bottom-medium">Process nerds, this is for you.</h2> 
+                <p class="heading--dek">You already run Agile at work. And you love finding workarounds that might seem a little nutty to everyone else—kind of like this one. We get you.</p>
+            </div>
+           <div class="cta__button-box u-center-text u-margin-top-small">
+                <a href="https://app.heyhon.co/register" class="btn btn--solid-violet">Sign Up for Free <span class="btn__right-arrow">&rarr;</span></a>              
+           </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <a href="#top" class="footer__logo">HeyHon</a>
+            </div>
+            <div class="footer__right">
+                <div class="footer__copyright-box">
+                    <p class="footer__copyright">&copy; 2019 HeyHon</p>
+                </div>  
+                <div class="footer__link-box">
+                    <a href="mailto:lisa@heyhon.co" class="footer__link" title="Contact HeyHon">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
-    
-
-    
 </html>

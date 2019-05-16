@@ -1,0 +1,21 @@
+.section-cta {
+    background-image: radial-gradient(rgba($color-violet-bright, .45) 5%, transparent 0);
+    background-size: 4rem 4rem;
+    position: relative;
+    padding-bottom: 8rem;
+}
+.cta {
+    &__title {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 8rem;
+        
+        @include for-tablet-large-down {
+            width: 70%;
+        }
+        
+        @include for-tablet-medium-down {
+            width: 75%;
+        }
+    }
+}

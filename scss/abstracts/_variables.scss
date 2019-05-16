@@ -1,0 +1,43 @@
+// COLORS
+$color-gray-dark: #555;
+$color-gray-medium: #6a737d;
+$color-gray-blue: #c2cad4;
+$color-gray-light: #c7c7c7;
+$color-gray-lightest: #eee;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-violet-dark: #441d8c;
+$color-violet-bright: #7934fa;
+$color-blue-dark: #546ead;
+$color-blue-light: #459bdb;
+
+// GRADIENTS
+$gradient-violet-blue: linear-gradient(to right, $color-violet-dark 0%, $color-blue-dark 100%);
+$gradient-violet-blue-bright: linear-gradient(to top right, $color-violet-bright 50%, $color-blue-light 100%);
+$gradient-violet: linear-gradient(to left, $color-violet-dark 0%, $color-violet-bright 100%);
+$gradient-violet-darker: linear-gradient(to left, darken($color-violet-dark, 15%) 0%, darken($color-violet-bright, 15%) 100%);
+$gradient-violet-reverse: linear-gradient(to left, $color-violet-bright 0%, $color-violet-dark 100%);
+$gradient-dot: radial-gradient(rgba($color-violet-bright, .45) 5%, transparent 0);
+
+// SHADOWS
+$black-shadow-diffused: .5rem 1rem 2.25rem rgba($color-black, 0.15);
+$black-shadow-darker: .25rem .5rem 1rem rgba($color-black, 0.2);
+$black-shadow-surround-light: 0rem 0rem 1rem rgba($color-black, 0.15);
+
+$violet-shadow-diffused: 0 0 3rem rgba($color-violet-bright, 0.25);
+
+// FONT SIZE
+$font-size-default: 1.6rem;
+
+// NAVIGATION AND HEADER
+$nav-icon-dimension: 7rem;
+$nav-icon-spacing: .8rem;
+$nav-spacing-side: 10rem;
+$nav-spacing-side-small: 6rem;
+$nav-spacing-side-smallest: 3rem;
+$nav-spacing-top: 4.5rem;
+$nav-spacing-top-small: 3.5rem;
+$nav-spacing-top-smallest: 2.5rem;
+
