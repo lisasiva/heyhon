@@ -57,7 +57,6 @@ body {
         font-size: 6.25rem;
         font-weight: 500; 
         line-height: 1.2;
-        letter-spacing: .05em;
         
         @include for-tablet-medium-down {
             font-size: 5rem;
@@ -112,7 +111,9 @@ body {
         }
     }
     
-    &--dek { color: $color-gray-medium; }
+    &--dek { 
+        color: $color-gray-medium;
+    }
     
     &--dek-cta { 
         color: $color-white;

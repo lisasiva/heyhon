@@ -62,8 +62,7 @@ body {
 .heading--primary {
   font-size: 6.25rem;
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: .05em; }
+  line-height: 1.2; }
   @media (max-width: 56.25em) {
     .heading--primary {
       font-size: 5rem; } }
