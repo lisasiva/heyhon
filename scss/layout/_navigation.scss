@@ -11,6 +11,10 @@
         background-color: $color-white;
         z-index: 2000;
         
+        @include for-tablet-large-up {
+            display: none;
+        }
+        
         @include for-tablet-medium-down {
             top: $nav-spacing-top-small;    
         }
@@ -37,6 +41,10 @@
         z-index: 1000;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        
+        @include for-tablet-large-up {
+            display: none;
+        }
         
         @include for-tablet-medium-down {
             top: #{$nav-spacing-top-small + .5rem};
@@ -133,3 +141,71 @@
 
     
 }
+
+// NAV BAR - VISIBLE AT 900PX+
+
+.header__top-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    //align-items: center;
+    //justify-content: center;
+    
+}
+
+.header__main-nav {
+    position: absolute;
+    top: $nav-spacing-top;
+    right: $nav-spacing-side;
+    transform: translateY(50%);
+    display: none;
+    
+    @include for-tablet-large-up {
+        display: inline-block;
+    }
+}
+
+.header__main-nav li {
+    @include font-monospace;
+    display: inline-block;
+
+    & a:link,
+    & a:visited {
+        text-decoration: none;
+        font-size: $font-size-default;
+        transition: border-bottom .2s;
+        
+        &:not(last-child) {
+            color: $color-gray-medium;
+            margin-right: 3rem;
+            padding-bottom: .6rem;
+            border-bottom: 1px sold transparent;
+        }
+        
+    }
+    
+    &:last-child {
+        a:link,
+        a:visited {
+            color: $color-violet-bright;
+            padding: 1rem;
+            border-radius: 3px;
+            border: 1px solid lighten($color-violet-bright, 10%);
+            transition: all .2s;
+            
+        }
+        
+        a:hover,
+        a:active {
+            color: darken($color-violet-bright, 15%);
+            border: 1px solid $color-violet-bright;
+        }
+
+    }
+    
+    & a:hover,
+    & a:active {
+        border-bottom: 1px solid $color-violet-bright;
+    }
+    
+} 
+

@@ -36,6 +36,11 @@
 // MEDIA QUERIES
 ///////////////////////////
 
+// 1100px wide or wider
+@mixin for-tablet-large-up {
+    @media (min-width: 68.75em) { @content; }
+}
+
 // 1100px wide or narrower
 @mixin for-tablet-large-down {
     @media (max-width: 68.75em) { @content; }

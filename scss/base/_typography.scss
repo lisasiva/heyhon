@@ -54,9 +54,10 @@ body {
     }
     
     &--primary {
-        font-size: 6rem;
+        font-size: 6.25rem;
         font-weight: 500; 
         line-height: 1.2;
+        letter-spacing: .05em;
         
         @include for-tablet-medium-down {
             font-size: 5rem;
@@ -74,7 +75,7 @@ body {
     
     &--secondary,
     &--cta {
-        font-size: 4.8rem;
+        font-size: 4rem;
         font-weight: 400;
         line-height: 1.2;
         
