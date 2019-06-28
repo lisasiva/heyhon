@@ -1,6 +1,10 @@
 .section-logos {
     background-image: $gradient-violet-reverse;
     width: 100%;
+    
+    @include for-phone-small-down {
+        display: none;
+    }
 }
 
 .logos__container {

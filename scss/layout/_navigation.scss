@@ -142,13 +142,11 @@
     
 }
 
-// NAV BAR - VISIBLE AT 900PX+
+// NAV BAR - VISIBLE AT 1100PX+
 
 .header__top-bar {
     display: flex;
     flex-direction: row-reverse;
-    //align-items: center;
-    //justify-content: center;
     
 }
 
@@ -162,6 +160,7 @@
     @include for-tablet-large-up {
         display: inline-block;
     }
+    
 }
 
 .header__main-nav li {

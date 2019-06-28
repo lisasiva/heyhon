@@ -319,14 +319,42 @@ body {
       width: 30rem;
       height: auto; } }
 
+#mc_embed_signup {
+  clear: left;
+  width: 100%; }
+  #mc_embed_signup input.email,
+  #mc_embed_signup input.button {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    height: 5rem; }
+  #mc_embed_signup input.email {
+    vertical-align: baseline; }
+    #mc_embed_signup input.email:focus {
+      outline: none;
+      color: #7934fa; }
+  #mc_embed_signup input.button {
+    background-color: #7934fa;
+    color: #fff;
+    border: 1px solid #9a66fb; }
+    #mc_embed_signup input.button:focus {
+      outline: none; }
+    #mc_embed_signup input.button:focus, #mc_embed_signup input.button:hover {
+      color: #7934fa;
+      background-color: #fff; }
+
 .header {
-  height: 110vh;
-  background-image: radial-gradient(rgba(121, 52, 250, 0.45) 5%, transparent 0);
-  background-size: 4rem 4rem;
-  position: relative; }
+  height: 110vh; }
+  .header--home, .header--retro {
+    background-image: radial-gradient(rgba(121, 52, 250, 0.45) 5%, transparent 0);
+    background-size: 4rem 4rem;
+    position: relative; }
   @media (max-width: 68.75em) and (min-height: 50em) and (orientation: portrait) {
     .header {
       height: 80vh; } }
+  @media (max-width: 20em) {
+    .header {
+      height: 100vh; } }
   .header__logo {
     position: absolute;
     top: 4.5rem;
@@ -338,7 +366,6 @@ body {
       .header__logo {
         left: 6rem; } }
   .header__content {
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,6 +373,13 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+    .header__content--home {
+      width: 50%; }
+    .header__content--retro {
+      width: 60%; }
+      .header__content--retro .header__buttons {
+        margin: 0 auto;
+        width: 80%; }
     @media (max-width: 68.75em) {
       .header__content {
         width: 60%; } }
@@ -355,7 +389,8 @@ body {
         transform: translateY(-45%); } }
     @media (max-width: 30em) {
       .header__content {
-        width: 80%; } }
+        width: 80%;
+        transform: translateY(-48%); } }
 
 .navigation {
   position: relative; }
@@ -526,6 +561,10 @@ body {
     .cta__title {
       width: 75%; } }
 
+.cta__button-box {
+  margin: 0 auto;
+  width: 80%; }
+
 .footer {
   background-color: #c2cad4;
   padding: 1.4rem 10rem; }
@@ -576,6 +615,9 @@ body {
 .section-logos {
   background-image: linear-gradient(to left, #7934fa 0%, #441d8c 100%);
   width: 100%; }
+  @media (max-width: 20em) {
+    .section-logos {
+      display: none; } }
 
 .logos__container {
   display: flex;
@@ -604,3 +646,65 @@ body {
   @media (max-width: 30em) {
     .logo__img--mp {
       display: none; } }
+
+#how {
+  padding: 4rem 0rem; }
+
+.how__title {
+  margin: 0 auto; }
+  @media (max-width: 30em) {
+    .how__title {
+      width: 80%; } }
+
+.how__content {
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .how__content {
+      flex-direction: column;
+      width: 50%; } }
+  @media (max-width: 37.5em) {
+    .how__content {
+      width: 65%; } }
+  @media (max-width: 30em) {
+    .how__content {
+      width: 70%; } }
+
+.how__step {
+  padding: 3rem;
+  flex: 1;
+  border-radius: 3px;
+  box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.05);
+  margin: 0 1.5rem; }
+  @media (max-width: 56.25em) {
+    .how__step {
+      display: flex;
+      align-items: center; }
+      .how__step:not(:last-child) {
+        margin-bottom: 3rem; } }
+  @media (max-width: 30em) {
+    .how__step {
+      flex-direction: column;
+      justify-content: center; } }
+
+.step__icon {
+  font-size: 2.8rem; }
+  .step__icon i {
+    background: linear-gradient(to right, #441d8c 0%, #546ead 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  @media (max-width: 56.25em) {
+    .step__icon {
+      margin-right: 3rem; } }
+  @media (max-width: 30em) {
+    .step__icon {
+      margin-right: 0rem;
+      margin-bottom: 2rem; } }
+
+.step__name {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.8rem; }
+
+.step__description {
+  font-size: 1.4rem; }

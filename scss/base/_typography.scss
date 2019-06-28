@@ -57,7 +57,7 @@ body {
         font-size: 6.25rem;
         font-weight: 500; 
         line-height: 1.2;
-        
+
         @include for-tablet-medium-down {
             font-size: 5rem;
         }

@@ -57,6 +57,12 @@ const renderMockups = event => {
     // Otherwise, show Done screen
     } else if (feature === 'features__feature--3') {
         elements.featureImg.src = 'img/mockup-archive-done-heyhon.png';
+    } else if (feature === 'features__feature--retro-1') {
+        elements.featureImg.src = 'img/mockup-retro-discussion-notes.png';
+    } else if (feature === 'features__feature--retro-2') {
+        elements.featureImg.src = 'img/mockup-retro-questions.png';
+    } else if (feature === 'features__feature--retro-3') {
+        elements.featureImg.src = 'img/mockup-retro-action-items.png';
     }
     
 };
