@@ -58,11 +58,11 @@ const renderMockups = event => {
     } else if (feature === 'features__feature--3') {
         elements.featureImg.src = 'img/mockup-archive-done-heyhon.png';
     } else if (feature === 'features__feature--retro-1') {
-        elements.featureImg.src = 'img/mockup-retro-discussion-notes.png';
+        elements.featureImg.src = 'img/mockup-retro-topics.png';
     } else if (feature === 'features__feature--retro-2') {
-        elements.featureImg.src = 'img/mockup-retro-questions.png';
+        elements.featureImg.src = 'img/retro-action-items.png';
     } else if (feature === 'features__feature--retro-3') {
-        elements.featureImg.src = 'img/mockup-retro-action-items.png';
+        elements.featureImg.src = 'img/retro-tips-before-you-start.png';
     }
     
 };

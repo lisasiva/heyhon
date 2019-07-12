@@ -72,6 +72,11 @@
             font-size: 1.4rem;
         }
         
+        &--purple {
+            color: $color-violet-bright;
+            font-weight: 700;
+        }
+        
         &:hover,
         &:focus {
             border: 1px solid $color-violet-bright;

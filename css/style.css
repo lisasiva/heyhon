@@ -216,6 +216,9 @@ body {
     font-weight: 900; }
   .features__feature--description {
     font-size: 1.4rem; }
+  .features__feature--purple {
+    color: #7934fa;
+    font-weight: 700; }
   .features__feature:hover, .features__feature:focus {
     border: 1px solid #7934fa;
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.15); }
