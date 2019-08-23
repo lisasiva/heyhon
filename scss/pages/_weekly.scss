@@ -1,7 +1,7 @@
 .header__content--weekly {
     
     @include for-phone-medium-down {
-        transform: translateY(-40%);
+        transform: translateY(-45%);
     }
     
     & .heading--primary {
