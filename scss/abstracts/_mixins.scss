@@ -61,6 +61,11 @@
     @media (max-width: 30em) { @content; } 
 } 
 
+// 375px wide or narrow
+@mixin for-phone-medium-down {
+    @media (max-width: 23.5em) { @content; } 
+} 
+
 // 320px wide or narrower
 @mixin for-phone-small-down {
     @media (max-width: 20em) { @content; }

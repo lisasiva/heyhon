@@ -1,0 +1,43 @@
+.header__content--weekly {
+    
+    @include for-phone-medium-down {
+        transform: translateY(-40%);
+    }
+    
+    & .heading--primary {
+        @include for-phone-large-down {
+            font-size: 3.5rem;
+            line-height: 1.3;
+        }
+    }
+}
+
+.header__example {
+    margin-top: 2rem;
+    
+    @include for-phone-large-down {
+        margin-top: 1.5rem;
+    }
+    
+    &-link {
+        @include font-monospace;
+        text-decoration: none;
+        font-size: 1.8rem;
+        padding-bottom: 3px;
+        transition: all .2s;
+        
+        &:link,
+        &:visited {
+            color: $color-violet-bright; 
+            border-bottom: 1px solid transparent;
+        }
+        
+        &:hover,
+        &:active {
+            color: $color-violet-dark;
+            border-bottom: 1px solid $color-violet-dark;
+        }
+    
+    }
+    
+}

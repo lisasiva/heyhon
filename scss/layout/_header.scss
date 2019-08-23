@@ -2,7 +2,8 @@
     height: 110vh;
 
     &--home,
-    &--retro {
+    &--retro,
+    &--weekly {
         background-image: $gradient-dot;
         background-size: 4rem 4rem;
         position: relative;
@@ -45,7 +46,8 @@
             width: 50%;
         }
         
-        &--retro {
+        &--retro,
+        &--weekly {
             width: 60%;
             & .header__buttons {
                 margin: 0 auto;
