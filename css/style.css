@@ -108,6 +108,17 @@ body {
 .heading--dek-cta {
   color: #fff; }
 
+.text--link:link, .text--link:visited {
+  text-decoration: none;
+  color: #7934fa;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+  transition: all .2s; }
+
+.text--link:hover, .text--link:active {
+  color: #441d8c;
+  border-bottom: 1px solid #441d8c; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -186,7 +197,8 @@ body {
 
 .features__text-box {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-grow: 1; }
 
 .features__feature {
   width: 70%;
@@ -348,7 +360,7 @@ body {
 
 .header {
   height: 110vh; }
-  .header--home, .header--retro, .header--weekly {
+  .header--home, .header--retro, .header--weekly, .header--wiki {
     background-image: radial-gradient(rgba(121, 52, 250, 0.45) 5%, transparent 0);
     background-size: 4rem 4rem;
     position: relative; }
@@ -378,9 +390,9 @@ body {
     transform: translateY(-50%); }
     .header__content--home {
       width: 50%; }
-    .header__content--retro, .header__content--weekly {
+    .header__content--retro, .header__content--weekly, .header__content--wiki {
       width: 60%; }
-      .header__content--retro .header__buttons, .header__content--weekly .header__buttons {
+      .header__content--retro .header__buttons, .header__content--weekly .header__buttons, .header__content--wiki .header__buttons {
         margin: 0 auto;
         width: 80%; }
     @media (max-width: 68.75em) {
@@ -714,7 +726,7 @@ body {
 
 @media (max-width: 23.5em) {
   .header__content--weekly {
-    transform: translateY(-40%); } }
+    transform: translateY(-45%); } }
 
 @media (max-width: 30em) {
   .header__content--weekly .heading--primary {

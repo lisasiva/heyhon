@@ -3,34 +3,35 @@
 
     &--home,
     &--retro,
-    &--weekly {
+    &--weekly,
+    &--wiki {
         background-image: $gradient-dot;
         background-size: 4rem 4rem;
         position: relative;
     }
-    
-    
+
+
     @include for-long-mobile-devices-portrait {
         height: 80vh;
     }
-    
+
     @include for-phone-small-down {
         height: 100vh;
     }
-    
+
     &__logo {
         position: absolute;
         top: $nav-spacing-top;
         left: $nav-spacing-side;
-        
+
         @include for-tablet-medium-down {
             top: $nav-spacing-top-small;
         }
-        
+
         @include for-tablet-small-down {
             left: $nav-spacing-side-small;
         }
-        
+
     }
 
     &__content {
@@ -41,38 +42,39 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        
+
         &--home {
             width: 50%;
         }
-        
+
         &--retro,
-        &--weekly {
+        &--weekly,
+        &--wiki {
             width: 60%;
             & .header__buttons {
                 margin: 0 auto;
-                width: 80%; 
+                width: 80%;
             }
         }
-        
+
         @include for-tablet-large-down {
             width: 60%;
         }
-        
+
         @include for-tablet-medium-down {
             width: 70%;
             transform: translateY(-45%);
         }
-        
+
         @include for-phone-large-down {
             width: 80%;
             transform: translateY(-48%);
         }
-        
-        
-        
+
+
+
     }
-    
+
 
 
 }

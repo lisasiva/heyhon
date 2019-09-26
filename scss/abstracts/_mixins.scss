@@ -29,7 +29,7 @@
 @mixin gradient-text {
     background: $gradient-violet-blue;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent;
 }
 
 ///////////////////////////
@@ -58,13 +58,13 @@
 
 // 480px wide or narrower
 @mixin for-phone-large-down {
-    @media (max-width: 30em) { @content; } 
-} 
+    @media (max-width: 30em) { @content; }
+}
 
 // 375px wide or narrow
 @mixin for-phone-medium-down {
-    @media (max-width: 23.5em) { @content; } 
-} 
+    @media (max-width: 23.5em) { @content; }
+}
 
 // 320px wide or narrower
 @mixin for-phone-small-down {
