@@ -1,0 +1,210 @@
+.navigation {
+    position: relative;
+
+    &__button {
+        height: $nav-icon-dimension;
+        width: $nav-icon-dimension;
+        border-radius: 50%;
+        position: fixed;
+        top: $nav-spacing-top;
+        right: $nav-spacing-side;
+        background-color: $color-white;
+        z-index: 2000;
+
+        @include for-tablet-large-up {
+            display: none;
+        }
+
+        @include for-tablet-medium-down {
+            top: $nav-spacing-top-small;
+        }
+
+        @include for-tablet-small-down {
+            right: $nav-spacing-side-small;
+        }
+
+        @include for-phone-small-down {
+            top: $nav-spacing-top-smallest;
+            right: $nav-spacing-side-smallest;
+        }
+    }
+
+
+    &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: #{$nav-spacing-top + .5rem};
+        right: #{$nav-spacing-side + .5rem};
+        background-image: $gradient-violet-blue;
+        z-index: 1000;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include for-tablet-large-up {
+            display: none;
+        }
+
+        @include for-tablet-medium-down {
+            top: #{$nav-spacing-top-small + .5rem};
+        }
+
+        @include for-tablet-small-down {
+            right: #{$nav-spacing-side-small + .5rem};
+        }
+
+        @include for-phone-small-down {
+            top: #{$nav-spacing-top-smallest + .5rem};
+            right: #{$nav-spacing-side-smallest + .5rem};
+        }
+
+        &--menu-open {
+            transform: scale(80);
+        }
+
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        &--menu-open {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+    &__list {
+        @include center-absolute;
+        list-style: none;
+    }
+
+
+    &__item {
+        @include typography-white-monospace;
+    }
+
+    &__link {
+        display: inline-block;
+        &:link,
+        &:visited {
+            @include typography-white-monospace;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom .2s;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 1px solid $color-white;
+        }
+    }
+
+    // ICON
+    &__icon {
+        @include center-absolute;
+        width: 3rem;
+        height: 1px;
+        background-color: $color-gray-dark;
+        display: block;
+        transition: all .2s;
+
+        &--line-1 {
+            top: #{($nav-icon-dimension / 2) - $nav-icon-spacing};
+        }
+
+        &--line-3 {
+            top: #{($nav-icon-dimension / 2) + $nav-icon-spacing};
+        }
+    }
+
+    &__button--menu-open &__icon--line-1 {
+        top: #{($nav-icon-dimension / 2)};
+        transform: translateX(-50%) rotate(135deg);
+    }
+
+    &__button--menu-open &__icon--line-2 {
+        display: none;
+    }
+
+    &__button--menu-open &__icon--line-3 {
+        top: #{($nav-icon-dimension / 2)};
+        transform: translateX(-50%) rotate(-135deg);
+    }
+
+
+
+}
+
+// NAV BAR - VISIBLE AT 1100PX+
+
+.header__top-bar {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.header__main-nav {
+    position: absolute;
+    top: $nav-spacing-top;
+    right: $nav-spacing-side;
+    transform: translateY(50%);
+    display: none;
+
+    @include for-tablet-large-up {
+        display: inline-block;
+    }
+
+}
+
+.header__main-nav li {
+    @include font-monospace;
+    display: inline-block;
+
+    & a:link,
+    & a:visited {
+        text-decoration: none;
+        font-size: $font-size-default;
+        transition: border-bottom .2s;
+
+        &:not(last-child) {
+            color: $color-gray-medium;
+            margin-right: 3rem;
+            padding-bottom: .6rem;
+            border-bottom: 1px sold transparent;
+        }
+
+    }
+
+    &:last-child {
+        a:link,
+        a:visited {
+            color: $color-violet-bright;
+            padding: 1rem;
+            border-radius: 3px;
+            border: 1px solid lighten($color-violet-bright, 10%);
+            transition: all .2s;
+
+        }
+
+        a:hover,
+        a:active {
+            color: darken($color-violet-bright, 15%);
+            border: 1px solid $color-violet-bright;
+        }
+
+    }
+
+    & a:hover,
+    & a:active {
+        border-bottom: 1px solid $color-violet-bright;
+    }
+
+}
